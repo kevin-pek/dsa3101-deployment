@@ -1,3 +1,6 @@
 [submodule "frontend"]
 	path = frontend
 	url = git@github.com:kevin-pek/dsa3101-frontend.git
+[submodule "dsa3101-manpower-optimization-ci-backend"]
+	path = backend
+	url = git@github.com:shecheeyee/dsa3101-manpower-optimization-ci-backend.git
