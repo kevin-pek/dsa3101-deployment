@@ -5,3 +5,37 @@ services:
     build: ./frontend
     ports:
       - "3000:3000"
+  # Backend service 
+  flask-app:
+    container_name: flask-app
+    build: backend/src # from dockerfile in src directory
+    links:
+      - mysql-db  # Link the Flask app container to MySQL container
+    ports:
+      - "5001:5000"  # Map Flask app port 
+    volumes:
+      - ./backend/src:/app  # Mount your source code directory to /app inside container
+      - ./backend/data:/data  # Mount your source code directory to /app inside container
+    depends_on:
+      - mysql-db
+
+
+  mysql-db:
+    container_name: mysql-db
+    image: mysql:8.0
+    environment:
+        MYSQL_ROOT_PASSWORD: root #shift to env later on
+    ports:
+      - "3307:3306"  # Map MySQL port
+    volumes:
+      - ./backend/mysql_db/custom.cnf:/etc/mysql/conf.d/custom.cnf # Custom MySQL configuration file
+      - ./backend/mysql_db:/docker-entrypoint-initdb.d/:ro # runs all .sql script from docker entrypoint on container creation
+      - ./backend/data:/data  # Mount data directory to /data/csv inside container
+      - ./backend/data:/var/lib/mysql-files  # Mount data directory to /data/csv inside secure_file_priv of mysql container
+      - mysql-data:/var/lib/mysql # persist data
+    restart: always
+    command: 
+      - '--local-infile=1' # Enable local infile
+
+volumes:
+  mysql-data:
