@@ -16,6 +16,7 @@ services:
     volumes:
       - ./backend/src:/app  # Mount your source code directory to /app inside container
       - ./backend/data:/data  # Mount your source code directory to /app inside container
+    restart: always
     depends_on:
       - mysql-db
 
