@@ -2,7 +2,7 @@
 
 👋 Hello! This is the deployment repo for our group's application stack. The frontend and backend repos are added as submodules to this repository, tagged to a commit hash that is stable and working.
 
-For more detailed information on the frontend and backend repos, please click on their respective folders!
+For more detailed information on the [frontend](https://github.com/kevin-pek/dsa3101-frontend/) and [backend](https://github.com/shecheeyee/dsa3101-manpower-optimization-ci-backend/) repos please click the links here!
 
 Check out our [wiki](https://github.com/kevin-pek/dsa3101-deployment/wiki) for more information about our project!
 
