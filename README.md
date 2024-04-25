@@ -4,6 +4,10 @@
 
 For more detailed information on the frontend and backend repos, please click on their respective folders!
 
+Check out our [wiki](https://github.com/kevin-pek/dsa3101-deployment/wiki) for more information about our project!
+
+Confused? Need help running this app? Check out our [help](https://github.com/kevin-pek/dsa3101-deployment/wiki/Help) page for a list of common issues and FAQs!
+
 ## Prerequisites
 
 The entire application stack runs on docker, so please make sure you have Docker installed.
@@ -20,4 +24,4 @@ docker compose up -d  # run the entire stack (MySQL, Flask API, React App) in de
 
 Once all containers are running the frontend app should now be accessible on port 3000. See `docker-compose.yml` for the port mappings for each service. Alternatively, you can also clone the frontend and backend repos separately and run them manually. See their respective repos for more information.
 
-Should you wish to make any changes in the frontend/backend repositories, you can edit them within the `frontend` and `backend` servers and push/pull any changes within this repo.
+Should you wish to make any changes in the frontend/backend repositories, you can edit them within the `frontend` and `backend` directories and push/pull any changes within this repo.
