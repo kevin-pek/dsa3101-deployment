@@ -2,7 +2,7 @@
 
 👋 Hello! This is the deployment repo for our group's application stack. The frontend and backend repos are added as submodules to this repository, tagged to a commit hash that is stable and working.
 
-For more detailed information on the [frontend](https://github.com/kevin-pek/dsa3101-frontend/) and [backend](https://github.com/shecheeyee/dsa3101-manpower-optimization-ci-backend/) repos please click the links here!
+For more detailed information on the [frontend](https://github.com/kevin-pek/dsa3101-frontend/) and [backend](https://github.com/shecheeyee/dsa3101-manpower-optimization-ci-backend/) repos please click the links here! To learn more about how to use our frontend application do check out our [user guide](https://docs.google.com/document/d/1UIK-Pzp5kED8erwhT2WhK-t0zv-lOWuc3SqK3n4nTaQ/edit?usp=sharing) as well!
 
 Check out our [wiki](https://github.com/kevin-pek/dsa3101-deployment/wiki) for more information about our project!
 
@@ -10,7 +10,7 @@ Confused? Need help running this app? Check out our [help](https://github.com/ke
 
 ## Prerequisites
 
-The entire application stack runs on docker, so please make sure you have Docker installed.
+The entire application stack runs on docker, so please make sure you have [Docker](https://docs.docker.com/engine/install/) installed.
 
 ## Getting Started
 
