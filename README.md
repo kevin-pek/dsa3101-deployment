@@ -10,7 +10,7 @@ Confused? Need help running this app? Check out our [help](https://github.com/ke
 
 ## Prerequisites
 
-The entire application stack runs on docker, so please make sure you have Docker installed.
+The entire application stack runs on docker, so please make sure you have [Docker](https://docs.docker.com/engine/install/) installed.
 
 ## Getting Started
 
