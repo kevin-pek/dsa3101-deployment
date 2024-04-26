@@ -24,4 +24,6 @@ docker compose up -d  # run the entire stack (MySQL, Flask API, React App) in de
 
 Once all containers are running the frontend app should now be accessible on port 3000. See `docker-compose.yml` for the port mappings for each service. Alternatively, you can also clone the frontend and backend repos separately and run them manually. See their respective repos for more information.
 
-Should you wish to make any changes in the frontend/backend repositories, you can edit them within the `frontend` and `backend` directories and push/pull any changes within this repo.
+To login to the app, use the credentials `manager` and `pword123`.
+
+Should you wish to make any changes in the frontend/backend repositories, you can edit them within the `frontend` and `backend` directories and push/pull any changes while inside the respective directories.
